@@ -1,0 +1,47 @@
+$Green: #2a3e3f;
+$Soft-green: #eaecec;
+
+body {
+  font-family: "Lato", sans-serif;
+  background: url("./assets/Bg-image.png") no-repeat;
+  background-position: 0px;
+  background-size: 20rem;
+  form {
+    background-color: $Soft-green;
+    padding: 1rem 2rem;
+    width: fit-content;
+
+    border-radius: 30px;
+    margin: 5rem auto auto 25rem;
+
+    color: $Green;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+    input {
+      width: 20rem;
+      height: 2rem;
+      border-radius: 8px;
+      border: none;
+      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+      margin: 1rem 0;
+      &[type="checkbox"] {
+        width: auto;
+        height: auto;
+        box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+      }
+      &:last-child {
+        width: 5rem;
+        margin-bottom: 0;
+        align-self: center;
+        border-radius: 5px;
+        border-color: $Green;
+        border-style: solid;
+        background-color: $Soft-green;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}

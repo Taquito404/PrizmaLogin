@@ -1,0 +1,58 @@
+body {
+  font-family: "Lato", sans-serif;
+  background: url("./assets/Bg-image.png") no-repeat;
+  background-position: 0px;
+  background-size: 20rem;
+}
+
+body form {
+  background-color: #eaecec;
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30px;
+  margin: 5rem auto auto 25rem;
+  color: #2a3e3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body form input {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: none;
+  -webkit-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin: 1rem 0;
+}
+
+body form input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  -webkit-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+body form input:last-child {
+  width: 5rem;
+  margin-bottom: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 5px;
+  border-color: #2a3e3f;
+  border-style: solid;
+  background-color: #eaecec;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=styles.css.map */
