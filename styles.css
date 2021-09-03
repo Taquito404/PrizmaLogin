@@ -1,18 +1,20 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Gothic A1", sans-serif;
   background: url("./assets/Bg-image.png") no-repeat;
   background-position: 0px;
   background-size: 20rem;
 }
 
 body form {
+  position: fixed;
+  top: 20vh;
+  right: 20vw;
   background-color: #eaecec;
   padding: 1rem 2rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 30px;
-  margin: 5rem auto auto 25rem;
   color: #2a3e3f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +27,16 @@ body form {
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+body form label {
+  letter-spacing: 0.2em;
+  font-size: 15px;
+}
+
+body form label:last-child {
+  font-size: 12px;
+  cursor: pointer;
+}
+
 body form input {
   width: 20rem;
   height: 2rem;
@@ -35,14 +47,57 @@ body form input {
   margin: 1rem 0;
 }
 
+body form input::-webkit-input-placeholder {
+  padding-left: 0.5rem;
+}
+
+body form input:-ms-input-placeholder {
+  padding-left: 0.5rem;
+}
+
+body form input::-ms-input-placeholder {
+  padding-left: 0.5rem;
+}
+
+body form input::placeholder {
+  padding-left: 0.5rem;
+}
+
+body form input:focus {
+  outline-color: #689f8c;
+}
+
+body form input:focus::-webkit-input-placeholder {
+  color: white;
+}
+
+body form input:focus:-ms-input-placeholder {
+  color: white;
+}
+
+body form input:focus::-ms-input-placeholder {
+  color: white;
+}
+
+body form input:focus::placeholder {
+  color: white;
+}
+
 body form input[type="checkbox"] {
   width: auto;
   height: auto;
   -webkit-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+body form input:checked {
+  color: magenta;
 }
 
 body form input:last-child {
+  color: #2a3e3f;
   width: 5rem;
   margin-bottom: 0;
   -ms-flex-item-align: center;
@@ -54,5 +109,15 @@ body form input:last-child {
   background-color: #eaecec;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+body form input:last-child:hover {
+  background-color: #2a3e3f;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
