@@ -124,6 +124,9 @@ body form input:checked {
 body form input:last-child {
   color: #2a3e3f;
   width: 5rem;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  font-weight: bold;
   margin-bottom: 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
