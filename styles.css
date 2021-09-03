@@ -1,8 +1,12 @@
 body {
   font-family: "Gothic A1", sans-serif;
-  background: url("./assets/Bg-image.png") no-repeat;
-  background-position: 0px;
-  background-size: 20rem;
+  background: url("./assets/BgRectangle.png") no-repeat;
+  background-position: -1rem;
+  background-size: 100vh;
+}
+
+body img:first-of-type {
+  width: 3rem;
 }
 
 body form {
@@ -29,11 +33,11 @@ body form {
 
 body form label {
   letter-spacing: 0.2em;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 body form label:last-child {
-  font-size: 12px;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
