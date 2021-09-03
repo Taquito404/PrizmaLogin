@@ -7,6 +7,27 @@ body {
 
 body img:first-of-type {
   width: 3rem;
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+body img:nth-of-type(2) {
+  width: 10rem;
+  position: fixed;
+  top: 50vh;
+  left: 10vw;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+body img:nth-of-type(2):hover {
+  -webkit-filter: invert(85%);
+          filter: invert(85%);
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 body form {

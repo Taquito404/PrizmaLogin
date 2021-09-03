@@ -10,6 +10,21 @@ body {
   img {
     &:first-of-type {
       width: 3rem;
+      position: fixed;
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+    &:nth-of-type(2) {
+      width: 10rem;
+      position: fixed;
+      top: 50vh;
+      left: 10vw;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        filter: invert(85%);
+        transform: rotate(2deg);
+        transition: 0.2s ease-in-out;
+      }
     }
   }
   form {
